@@ -1,0 +1,84 @@
+
+/***
+ * 
+ * @author Enoc Gonzalez 
+ * 
+ * @root for the pane holding closijg button
+ * @.MainPane for Stardust Calculator
+ * @.LogIn for Login for scene color in login page
+ * @.LogIn pane holding x button on log in page
+ * @. highlight buttons of the Stardust Calculator,
+ * @.hightlight2 buttons of void. Calculator
+ * @. highlight3 buttons of Ocean Soul Calculator
+ * @.Color1,Color2,Color3 Colors shown in color Selection Screen(Stardust, Ocean Soul, Void.) 
+ * 
+ ***/
+
+.root{ 
+	-fx-background-color: #222;
+	-fx-background-radius: 20;
+} 
+
+
+.mainPane{
+	
+	-fx-background-color: linear-gradient(to bottom right, #FF7F50, #6A5ACD);
+	-fx-background-radius: 15 15 25 25;
+}
+.secondPane{
+	
+	-fx-background-color: linear-gradient(to bottom right, #4ca1af, #c4e0e5);
+	-fx-background-radius: 15 15 25 25;
+	
+}
+
+.thirPane{
+	-fx-background-color: #000000;
+	-fx-background-radius: 15 15 25 25;
+	
+}
+
+.LogIn{
+	 -fx-background-color: linear-gradient(to bottom right, #ffd89b, #19547b);
+	 -fx-background-radius: 15 15 25 25;
+	
+}
+.LogInPane{
+	-fx-background-color: #222;
+	
+}
+.highlight{
+	-fx-background-color: #00000025;
+	-fx-background-radius: 15;
+}
+
+.highlight2{
+	-fx-background-color: #00000025;
+	-fx-background-radius: 15;
+	-fx-text-fill: linear-gradient(to bottom right,
+       	#cb9b51 22%, 
+	#f6e27a 55%,
+	#f6f2c0 55%
+	)
+}
+.highlight3{
+	-fx-background-color: #00000025;
+	-fx-background-radius: 15;
+	-fx-text-fill: linear-gradient(to bottom right,
+       	#D48893 30%, 
+	#FFF7FF 69%, 
+	#FFFFFF 55% 
+	)
+}
+
+.colorSelec1{
+	-fx-background-color: linear-gradient(to bottom right, #FF7F50, #6A5ACD);
+}
+
+.colorSelec2{
+	-fx-background-color: linear-gradient(to bottom right, #4ca1af, #c4e0e5);
+}
+
+.colorSelec3{
+	-fx-background-color: #000000;
+}

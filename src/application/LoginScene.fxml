@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="firstPane" prefHeight="460.0" prefWidth="388.0" styleClass="LogIn" stylesheets="@Controller.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+	<!-- TODO Add Nodes -->
+	<children>
+      <TextField fx:id="txtUserName" layoutX="116.0" layoutY="161.0" onAction="#Log" promptText="Username">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.545098066329956" green="0.1882352977991104" blue="0.08235294371843338" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </TextField>
+      <PasswordField fx:id="txtPassword" layoutX="116.0" layoutY="213.0" onAction="#Log" promptText="Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color red="0.6381579041481018" green="0.1831749528646469" blue="0.1831749528646469" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </PasswordField>
+      <Label fx:id="lblLogin" layoutX="54.0" layoutY="75.0" prefHeight="41.0" prefWidth="298.0" text="Welcome! Enter Your Name" textAlignment="CENTER" textFill="#162b48">
+         <font>
+            <Font name="SansSerif Bold" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="121.0" layoutX="22.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/calc.jpeg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="H_RESIZE" />
+         </cursor>
+         <effect>
+            <Glow>
+               <input>
+                  <InnerShadow>
+                     <input>
+                        <DropShadow />
+                     </input>
+                  </InnerShadow>
+               </input>
+            </Glow>
+         </effect>
+      </ImageView>
+      <Pane fx:id="titlePane" layoutX="-6.0" layoutY="-1.0" prefHeight="27.0" prefWidth="402.0" styleClass="LogInPane" stylesheets="@Controller.css">
+         <children>
+            <ImageView fx:id="bclose" fitHeight="15.0" fitWidth="15.0" layoutX="370.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Desktop/neonclose.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fx:id="bminimize" fitHeight="17.0" fitWidth="15.0" layoutX="341.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Desktop/minus.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="172.0" layoutY="286.0" mnemonicParsing="false" onAction="#Log" onMouseClicked="#handle" prefHeight="35.0" prefWidth="78.0" text="Submit" />
+   </children>
+</AnchorPane>
