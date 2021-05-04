@@ -33,7 +33,6 @@ public class MainControl {
 	
 	@FXML private Button clear; 
 
-
 	private long num1 = 0;
 	private long num2 = 0;
 
@@ -44,7 +43,7 @@ public class MainControl {
 	// Handle closing button and dragging calculator on the screen
 	public void initialize(Stage s) {
 		
-	
+		
 		titlePane.setOnMousePressed(mouseEvent->{
 		x = mouseEvent.getSceneX();
 		y = mouseEvent.getSceneY();
@@ -63,7 +62,7 @@ public class MainControl {
 			s.setIconified(true);
 		});		
 		
-} 	
+} 
 	
 	/**
 	 * Handles number display on the calculator by getting the number as a String and 
@@ -130,8 +129,6 @@ public class MainControl {
 	public void clearbutton(ActionEvent e) {
 		if(e.getSource()==clear) { 
 		results.setText("");
-		//this.num1 = 0;
-		//this.num2 = 0;
 		}
 	}
 	
@@ -164,10 +161,10 @@ public class MainControl {
 		
 		
 	}
-	
+	}
 	
 	}
 	
 	
 	
-}
+

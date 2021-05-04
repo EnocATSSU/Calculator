@@ -42,7 +42,7 @@
             </InnerShadow>
          </effect>
       </PasswordField>
-      <Label fx:id="lblLogin" layoutX="54.0" layoutY="75.0" prefHeight="41.0" prefWidth="298.0" text="Welcome! Enter Your Name" textAlignment="CENTER" textFill="#162b48">
+      <Label fx:id="lblLogin" layoutX="119.0" layoutY="75.0" prefHeight="41.0" prefWidth="213.0" text="Welcome! Log In" textAlignment="CENTER" textFill="#162b48">
          <font>
             <Font name="SansSerif Bold" size="22.0" />
          </font>
@@ -80,6 +80,6 @@
             <Image url="@../../../../Desktop/minus.png" />
          </image>
       </ImageView>
-      <Button layoutX="172.0" layoutY="286.0" mnemonicParsing="false" onAction="#Log" onMouseClicked="#handle" prefHeight="35.0" prefWidth="78.0" text="Submit" />
+      <Button fx:id="submit" layoutX="172.0" layoutY="286.0" mnemonicParsing="false" onAction="#Log" prefHeight="35.0" prefWidth="78.0" text="Submit" />
    </children>
 </AnchorPane>
